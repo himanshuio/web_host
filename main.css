@@ -1,0 +1,459 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:ital,wght@0,100;1,100&display=swap');
+
+:root{
+ --lg-font: 'Kaisei Tokumin', serif;
+ --sm-font: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--lg-font);
+}
+
+.navbar-toggler{
+  margin-left: 20px;
+  
+}
+.navbar-collapse{
+  margin: 10px;
+}
+/* Custom CSS for styling the navigation bar */
+/* Navbar */
+.stylish-navbar {
+  background-color: #007BFF;
+  padding: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f5a403;
+}
+
+
+.login-button,
+.signup-button {
+  background-color: #0030bf;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #1b160e;
+  transition: background-color 0.9s ease-out;
+}
+
+/* Carousel */
+/* Adjusted CSS for larger carousel */
+/* Adjusted CSS to fill empty space in the carousel with a background color */
+.carousel-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: #fd6703fa; /* Add your desired background color here */
+}
+
+
+/* Adjusted CSS for larger carousel slides */
+/* Adjusted CSS fors larger carousel slides */
+/* Adjusted CSS to center the image within a carousel slide */
+/* Adjusted CSS for background images to cover the entire carousel slide */
+.carousel-slide {
+  flex: 0 0 100%;
+  position: relative;
+  width: 100%;
+  max-height: 500px; /* Adjust the maximum height as needed */
+  background-size: cover; /* Cover the entire slide with the background image */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slide1 {
+  background-image: url('image/zenu.jpg'); /* Replace with your image URL */
+}
+
+.slide2 {
+  background-image: url('image/zenu.jpg'); /* Replace with your image URL */
+}
+
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 15px; /* Apply the same border radius as the container */
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  text-align: center;
+  position: relative; /* Required for positioning content */
+}
+
+.carousel-slide img {
+  max-width: 1000px;
+  max-height: 90% ;
+  height: 500px;
+  width: 1500px
+   /* Center images within slides */
+
+}
+
+/* Custom CSS styles for the carousel arrows */
+/* Adjusted CSS for larger arrow icons and circles */
+/* Adjusted CSS for larger arrow icons and circles */
+.arrow-circle {
+  font-size: 32px; /* Increase the font size for larger icons */
+  width: 60px; /* Increase the width of the circular background */
+  height: 60px; /* Increase the height of the circular background */
+  line-height: 60px; /* Center the icon vertically in the circle */
+  text-align: center; /* Center the icon horizontally in the circle */
+  color: #fff; /* Adjust the icon color */
+  border-radius: 50%; /* Make it a circle */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Add hover styles */
+.arrow-circle:hover {
+  background-color: rgba(165, 192, 228, 0.595); /* Background color on hover */
+}
+
+.carousel-button:hover .arrow-icon {
+  background-color: rgba(255, 243, 243, 0.5); /* Transparent white circle on hover */
+  
+
+}
+
+
+/* Adjust the button styles */
+.carousel-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons appear above images */
+}
+.carousel-button.prev {
+  left: 10px;
+ /* Change to your desired color */
+  color: #fff; /* Change to your desired text color */
+}
+
+.carousel-button.next {
+  right: 10px;
+   /* Change to your desired color */
+  color: #fff; /* Change to your desired text color */
+}
+/* CSS to style the product container and layout */
+/* CSS for product layout */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 20px; /* Adjust the gap as needed */
+  margin: 20px;
+  padding-left: 55px; 
+  padding-right: 55px;/* Added margin around the container for spacing */
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 10px;
+  height: 450px;
+  position: relative; /* Added for hover effect */
+  overflow: hidden; /* Added for hover effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover {
+  transform: scale(1.05); /* Enlarge the product on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+
+.product img {
+  max-width: 100%;
+  max-height: 300px; /* Set the desired maximum height */
+  width: 75%;
+  height: 130%;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 25%;
+  transition: transform 0.3s ease-in-out; /* Added for hover effect */
+}
+
+
+.product:hover img {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.product h2 {
+  margin-top: 10px; /* Add spacing between title and image */
+}
+
+/* Style for the "Add to Cart" button */
+.product button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: touch;
+  transition: background-color 0.3s ease-in-out; /* Added for hover effect */
+}
+
+.product button:hover {
+  background-color: #fc5a02;
+  transition: background-color 0.3s ease-in-out; /* Change button color on hover */
+}
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* Adjust the layout for screens up to 768px width */
+  .product-container {
+    max-width: 500px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    margin-right: 0; /* Remove the right margin */
+  }
+  .product img{
+    width:300px ;
+    height: 600px;
+  }
+  .carousel-slide img {
+    max-width: 370px;
+    max-height: 50% ;
+    height: 500px;
+    width: 1500px
+     /* Center images within slides */
+  
+  }
+  .carousel-container {
+    width: 100%;
+    height: 250px;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: #1bdf59; /* Add your desired background color here */
+  }
+  
+}
+
+@media (max-width: 576px) {
+  /* Adjust the layout for screens up to 576px width */
+  .product-container {
+      grid-template-columns: 1fr; /* 1 column for smaller screens */
+  }
+  .product img{
+    width:300px ;
+    height: 600px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.email-subscription {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin-top: 75px;
+}
+
+.email-subscription h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.email-subscription p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="email"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #f54c03;
+}
+
+/* Add animations to the .about-animation element using CSS animations or libraries like Animate.css */
+/* Styling for the About Us section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Set the section height to the full viewport height */
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the navigation links */
+.nav-item a.nav-link {
+  text-decoration: none;
+  position: relative;
+}
+
+/* Add a pseudo-element for the underline */
+.nav-item a.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the initial underline height as needed */
+  bottom: -2px; /* Position the underline just below the text */
+  background-color: transparent; /* Set the initial color to transparent */
+  transition: width 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+  transform-origin: left; /* Set the transformation origin to the left edge */
+  transform: scaleX(0); /* Start with the underline scaled to 0 width */
+}
+
+/* Increase the size of the underline on hover */
+.nav-item a.nav-link:hover::before {
+  width: 100%; /* Expand the underline to 100% width */
+  background-color: #007BFF; /* Change to your desired underline color */
+  transform: scaleX(1); /* Scale the underline to its original size */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #007BFF;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style for the copyright notice */
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Style for the footer links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f5a403;
+}
+
+/* Style for social media icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #f5a403;
+}
